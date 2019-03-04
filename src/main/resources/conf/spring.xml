@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop
+      http://www.springframework.org/schema/aop/spring-aop.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 扫描文件（自动将servicec层注入） -->
+    <!--<context:annotation-config />-->
+	<!--<context:component-scan base-package="cn.webbus.service,cn.webbus.spring" />-->
+
+	<!--<aop:aspectj-autoproxy  proxy-target-class="true"/>-->
+	<!--<bean id="pluginFactory" class="cn.webbus.spring.DefaultSpringPluginFactory" />-->
+	<!--<aop:config>-->
+		<!--<aop:aspect id="aspect" ref="pluginFactory">-->
+			<!--<aop:pointcut id="point" expression="execution(* cn.webbus.service..*.*(..)) or execution(* cn.webbus.controller..*.*(..))"/>-->
+			<!--<aop:before method="doBefore" pointcut-ref="point"/>-->
+		<!--</aop:aspect>-->
+	<!--</aop:config>-->
+</beans>
